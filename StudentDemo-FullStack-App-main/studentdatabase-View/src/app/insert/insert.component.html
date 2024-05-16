@@ -1,0 +1,24 @@
+<div align="center">
+    <h2> Add Student Record </h2>
+    <br><br>
+  <form #insertform="ngForm" (ngSubmit)="insertdata(insertform)">
+    <div class="form-group">
+    <label>  ID : </label>
+    <input type="number" #id (ngModel)="id" name="id" id="id" class="form-class">
+    </div> <br>
+    <div class="form-group">
+    <label>  Name : </label>
+    <input type="text" #name (ngModel)="name" name="name" id="name" class="form-class">
+    </div><br>
+    <div class="form-group">
+    <label>  Per : </label>
+    <input type="number" #per (ngModel)="per" name="per" id="per" class="form-class">
+    <br>
+    <label>  Result : </label>
+    <input type="text" #result (ngModel)="result" name="result" id="result" class="form-class">
+    </div><br><br>
+    <div class="form-group">
+    <input type="submit" value="Add" class="btn btn-primary w-100">
+    </div>
+  </form>
+</div>
